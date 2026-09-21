@@ -1,6 +1,3 @@
-# AnemoneWeb
-wed develop desing front end
-
 # Anemone - HealthTech UI/UX & Emotional Wellbeing Platform
 
 Anemone is an empathetic, AI-powered HealthTech web interface designed for emotional containment and mental health guidance. This project showcases the complete workflow from custom vector design to clean front-end implementation.
