@@ -1,0 +1,428 @@
+@font-face {
+    font-family: "fuentepersonal";
+    src: url(assets/Givonic-Regular.otf) format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "cows";
+    src: url(assets/aliensandcows_trial.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "fuentepersonal", sans-serif;
+    background-color: #faf0f0;
+    background-image: url("assets/fondo-web.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.nav-header {
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar {
+    background-color: #ffffff;
+    width: 90%;
+    max-width: 1000px;
+    padding: 15px 40px;
+    border-radius: 30px;
+    box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-link {
+    text-decoration: none;
+    display: flex;
+    gap: 20px;
+    color: #000000;
+    font-family: "fuentepersonal", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    align-items: center;
+
+}
+
+.logo {
+    height: 90px;
+    display: flex;
+}
+
+.card-section {
+    display: flex;
+    justify-self: center;
+    padding: 40px 20px;
+    margin-top: 40px;
+}
+
+.card {
+    background-color: #ffffff;
+    width: 90%;
+    max-width: 850px;
+    padding: 40px 50px;
+    border-radius: 35px;
+    box-shadow: 1px 20px 25px rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 30px;
+    
+}
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.card-title {
+    font-size: 23px;
+    font-weight: 600;
+    color: #000000;
+    margin: 0;
+    letter-spacing: 2px;
+}
+.card-subtitle {
+    font-size: 8px;
+    color: #000000;
+    margin: 0;
+    letter-spacing: 3px;
+}
+.card-button {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 12px 35px;
+    border: none;
+    border-radius: 25px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.8)
+}
+.card-button:hover {
+    transform: scale(1.10);
+    color: #000000;
+    font-weight: 600;
+    background: linear-gradient(to right, rgba(59, 169, 224, 0.7), rgba(230, 0, 126, 0.7));
+}
+.card-img {
+    width: 200px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 10px 0px 40px rgba(0, 0, 0, 0.5);
+    display: flex;
+    transition: transform 0.3s ease;
+}
+.card-img:hover {
+    transform: scale(1.10);
+    cursor: pointer;
+
+}
+.toolbar-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+.toolbar-card {
+    background-color: #ffffff;
+    padding: 10px 40px; width: 70%;
+    border-radius: 40px;
+    box-shadow: 10px 0px 30px rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.search-box {
+    display: flex;
+    align-items: center;
+    border: 1.5px solid #a7a2a2;
+    border-radius: 20px;
+    padding: 3px 12px;
+    width: 400px;
+}
+.search-icon {
+    width: 30px; 
+    height: 30px; 
+    margin-left: 0;
+    margin-right: 8px;
+    flex-shrink: 0;
+    
+}
+.search-input {
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 100%;
+}
+.toolbar-right {
+    margin-left: auto;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+.icon-tool {
+    background-color:rgba(130, 209, 241, 0.3);
+    border: none;
+    width: 40px; height: 40px;
+    border-radius: 30%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.8);
+}
+.icon-tool img{
+    width: 40px; height: 40px;
+    object-fit: contain;
+    
+}
+.icon-tool:hover {
+    transform: scale(1.08);
+}
+.slogan {
+    margin-top: 80px;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: "cows";
+    text-align: center;
+    letter-spacing: 12px;
+    display: inline-block;
+    width: 100%;               
+    transform: scaleX(1.4);    
+    transform-origin: center;  
+}
+.video-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    margin-bottom: 50px;
+}
+
+.video-card {
+    background-color: rgba(255, 255, 255, 0.40);
+    padding: 30px;
+    border-radius: 40px;
+    box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 750px;
+    width: 90%;
+}
+
+.video-container {
+    width: 100%;
+    border-radius: 30px;
+    overflow: hidden;
+    border: 4px solid #000000;
+    line-height: 0;
+}
+
+.video-container video {
+    width: 100%;
+    height: auto;
+    display: block;;
+    object-fit: cover;
+}
+
+.controls-video {
+    display: flex;
+    gap: 15px;
+    margin-top: 25px;
+}
+.v-icons {
+    background-color: rgba(130, 209, 241, 0.3);
+    border: none;
+    width: 40px; height: 40px;
+    border-radius: 30%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.8);
+}
+.v-icons img {
+    width: 40px; height: 40px;
+    object-fit: contain;
+}
+.v-icons:hover {
+    transform: scale(1.08);
+}
+.isHidden {
+    display: none !important;
+}
+.icon-muted {
+    background-color: rgba(230, 0, 126, 0.4);
+}
+
+
+.app-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin-top: 40px;
+}
+
+.app-download-btn {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 16px 40px;
+  border: none;
+  border-radius: 30px;
+  font-family: "fuentepersonal", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  cursor: pointer;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.4);
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.app-download-btn:hover {
+  transform: scale(1.2);
+  background: linear-gradient(to right, rgba(59, 169, 224, 0.9), rgba(230, 0, 126, 0.9));
+  color: #000000;
+  font-weight: 600;
+}
+
+.phone-mockup {
+  display: flex;
+  align-items: center;
+}
+
+.phone-img {
+  width: 250px;
+  height: auto;
+  filter: drop-shadow(0px 15px 25px rgba(0, 0, 0, 0.8));
+}
+
+.therapists-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 80px;
+  
+}
+
+.therapists-card {
+  background-color: #ffffff;
+  width: 90%;
+  max-width: 650px;
+  padding: 35px 80px;
+  border-radius: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.5);
+  gap: 25px;
+  
+}
+
+.avatars-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 45px; 
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.therapists-img {
+  width: 100px; height: 100px;
+  border-radius: 50%;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.9);
+  transition: transform 0.3s ease;
+}
+
+.therapists-img:hover {
+    transform: scale(1.1);
+}
+
+.therapists-info {
+  width: 100%;
+  text-align: center;
+  gap: 10px;
+  letter-spacing: 1.5px;
+}
+
+.therapists-info h3 {
+  font-family: "fuentepersonal", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #000000;
+  text-align: center;
+}
+
+.therapists-info p {
+  font-family: "fuentepersonal", sans-serif;
+  font-size: 16px;
+  color: #000000;
+  text-align: center;
+  font-weight: 600;
+}
+
+.footer-section {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+
+.footer-card {
+  background-color: rgba(59, 169, 224, 0.3);
+  width: 90%;
+  max-width: 900px;
+  padding: 25px 40px;
+  border-radius: 30px;
+  box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.06);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-links {
+  display: flex;
+  gap: 25px;
+}
+
+.f-link {
+  text-decoration: none;
+  color: #000000;
+  font-family: "fuentepersonal", sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  transition: opacity 0.2s ease;
+}
+
+.f-link:hover {
+  opacity: 0.8;
+}
+
+.footer-copy p {
+  font-family: "fuentepersonal", sans-serif;
+  font-size: 10px;
+  color: #000000;
+  margin: 0;
+  letter-spacing: 1px;
+}
